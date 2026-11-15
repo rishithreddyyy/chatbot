@@ -1,0 +1,52 @@
+# ========================================================
+# Code Forge AI - Production .gitignore
+# ========================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environment Variables & Secrets (CRITICAL: NEVER COMMIT)
+.env
+.env.local
+.env.*.local
+.streamlit/secrets.toml
+!.env.example
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Local Database & SQLite runtime data
+*.db
+*.sqlite
+*.sqlite3
+codeforge.db
+
+# Logs & Diagnostics
+*.log
+
+# Streamlit Runtime Cache
+.streamlit/cache/
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor Files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Testing & Coverage Caches
+.pytest_cache/
+.coverage
+htmlcov/
